@@ -1,9 +1,11 @@
 const express = require('express')
 const cors = require('cors');
+const { response } = require('express');
 
 //PATHS
 const partidosPath = '/partidos';
 const equiposPath = '/equipos';
+const authPath = '/auth'
 
 
 class Server{
@@ -25,6 +27,7 @@ class Server{
 
     routes(){
         this.app.use(partidosPath, require('./routes/partidos'))
+        this.app.use(authPath, require('./routes/auth'))
         
     }
 

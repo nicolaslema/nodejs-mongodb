@@ -1,6 +1,7 @@
 const {connectDB} = require('../utils/db');
 
 
+
 //@desc Generic find function for the collection partidos
 //
 const find = async ({conditions = {}, projection = {}, sort = {}, limit = 50}) =>{
