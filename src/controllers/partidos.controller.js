@@ -24,7 +24,7 @@ const findLastPartido = async(req, res) =>{
 
 
 const findPartidoByDate = async (req, res) =>{
-    const {start, end} = req.body;
+    const {start, end} = req.query;
     try {
         const partidoByDate = await findByDate(start, end);
         

@@ -32,7 +32,7 @@ const findLast = async () => find({sort: {_id: -1}, limit: 1})
 //
 const findByDate = (start, end) => find({
     conditions: {
-        fecha: {
+        fecha:{
             //greater than equal
             $gte: new Date(start), //ISOString
             
